@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid shadow-md box-border">
+        <div class="bg-mainColor text-center mx-auto p-1">
+            <p class="text-center text-lg font-semibold text-white"><i class="fa-solid fa-phone"></i> To get cash now call <a href="tel:5554280940" class="underline hover:bg-hoverColor hover:text-mainColor">555-428-0940</a></p>
+        </div>
+    </div>              
+    <div class="container-fluid sticky top-0 w-full flex justify-center transition-all duration-300 z-50 ease-linear bg-white"id="header__section">
+      <div class="container">
+        <nav id="nav" class="w-full" role="navigation">
+          <div class="container mx-auto overflow-hidden xl:p-5 flex flex-wrap items-center md:flex-no-wrap">
+            <div class="mr-4 md:mr-8">
+              <a href="#" rel="home">
+                <img src="/img/JGW logo header.png" class="" alt="">
+              </a>
+            </div>
+            <div class="ml-auto xl:hidden">
+              <button onclick="menuToggle()" class="flex items-center px-3 py-2 border rounded" type="button">
+                <svg class="h-3 w-3 " viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="mainColor" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+              </button>
+            </div>
+            <div id="menu" class="w-full h-0 transition-all ease-out duration-500 xl:transition-none xl:w-auto xl:flex-grow xl:flex xl:items-center max-xl:overflow-hidden">
+              <ul id="ulMenu" class="flex flex-col duration-300 ease-linear sm:transition-none mt-0 mx-4 xl:flex-row xl:items-center xl:mx-0 xl:ml-auto xl:mt-0 xl:pt-0 xl:border-0 xl:space-x-6">
+                <li class="md:p-1 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a  href="../../index.html" title="Home">Home</a></li>
+                <li class="md:p-1 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a href="#">Services</a></li>
+                <li class="md:p-1 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"> <a href="#">About</a></li>
+                
+                <!--end Hoverable Link-->
+                <li class="header-link">
+                  <div>
+                    <a href="./CasesWeHundle.html"><button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-gray-800 font-semibold hover:text-mainColor px-4 py-2.5 text-center inline-flex items-center" type="button">Cases We Hundle <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button></a>
+                              <!-- Dropdown menu -->
+                              <div id="dropdownHover" class="z-50 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                  <ul class="py-2 text-sm text-mainColor dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                                    <li>
+                                      <a href="./LegalFunding.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Legal Funding</a>
+                                    </li>
+                                    <li>
+                                      <a href="./PersonalInjury.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Personal Injury</a>
+                                    </li>
+                                    <li>
+                                      <a href="./CarAccident.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Car Accident</a>
+                                    </li>
+                                    <li>
+                                      <a href="./SlipAndFall.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Slip and Fall</a>
+                                    </li>
+                                    <li>
+                                      <a href="./ActAndMaritime.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jones Act and Maritime</a>
+                                    </li>
+                                  </ul>
+                              </div>
+                  </div>
+                </li>
+                <li class="md:p-2 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a href="#">Wahy Us</a></li>
+                <li class="md:p-2 lg:px-4 font-semibold block text-gray-800 px-4 py-1  hover:text-mainColor hover:border-b-4 hover:border-mainColor"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+        </div>
+
+    <!-- Section 1 -->
+   <div style="background-image: url('../../img/legal-funds.webp');" class="container-fluid bg-cover bg-no-repeat bg-center py-40 relative">
+    <div class="absolute h-full w-full top-0 left-0" style="background:rgba(0,0,0,0.5)"></div>
+        <h2 class="text-5xl font-bold text-white text-center relative z-30">Types of Lawsuit Funding</h2>
+   </div>
+
+   <!-- Section 2 -->
+   <div class="container-fluid bg-white pt-10 pb-48">
+    <div class="mx-auto text-center flex justify-center">
+        <p class="text-mainColor text-3xl lg:w-2/3">Express Legal Funding can help you move forward financially. We can provide pre-settlement cash advances for all types of personal injury and civil lawsuit cases.</p>
+    </div>
+    <div class="container mx-auto py-10 lg:flex lg:justify-around">
+        <div class="w-full lg:w-1/2 py-10 px-10">
+            <h4 class="text-gray-700 font-bold text-lg">Experts in Lawsuit Funding</h4>
+            <p>You want the best team fighting for your fair settlement. A lawsuit funding company can be your ally in that fight. That’s why you should only accept legal funding from experts. We are an expert legal funding company respected by a large number of law firms. We have a full-time licensed attorney on staff who will make your attorney’s job easier, not harder, so you can get the settlement money you deserve.</p>
+        </div>
+        <div class="w-full lg:w-1/2 py-10 px-10">
+            <h4 class="text-gray-700 font-bold  text-lg">Custom Pre-settlement Funding</h4>
+            <p>We know everyone’s case is unique to them, and no two lawsuits are the same. That’s why we evaluate each case on an individual basis to make pre-settlement funding more beneficial to our clients and their attorneys.</p>
+        </div>
+    </div>
+    <div class="w-full container mx-auto lg:flex lg:justify-around">
+        <a href="#"><button class="bg-mainColor w-full mb-2 box-border py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200">Legal Funding</button></a>
+        <a href="#"><button class="bg-mainColor w-full mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200">Car Accidents</button></a>
+        <a href="#"><button class="bg-mainColor w-full mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200">Personal Injury</button></a>
+        <a href="#"><button class="bg-mainColor w-full mb-2 py-3 lg:px-16 text-white text-xl font-bold rounded-full hover:bg-black duration-200">Slip and Fall</button></a>
+    </div>
+   </div>
+
+   <!-- Section 3 -->
+   <div class="container-fluid relative bg-gray-100 pt-28 pb-12">
+        <div class="w-full mx-auto flex justify-center items-center absolute  -top-[6%] sm:-top-[7%] md:-top-[12%] lg:-top-[25%]">
+            <img src="../../img/money-3-1024x334.png.webp" alt="" class="">
+       </div>
+       <div class="container mx-auto lg:flex lg:justify-around">
+        <div class="w-full lg:w-1/2 py-10 px-12">
+            <h4 class="text-mainColor font-bold text-xl">Why are we the best lawsuit funding company in 2022?</h4>
+            <p class="text-lg py-5">We are the best lawsuit funding company in 2022 because we do what’s right for our clients. In 2021, we led the fight to set a new and higher standard for ethical, consumer legal funding.</p>
+        </div>
+        <div class="w-full lg:w-1/2 py-10 px-12">
+            <h4 class="text-mainColor font-bold text-xl">What is direct legal funding?</h4>
+            <p class="text-lg py-5">Our legal funding team will always communicate directly with you, so you can get the pre-settlement cash you need faster. At Express Legal Funding, we use our own money to assist our clients directly with lawsuit funding. So you don’t have to get charged for any broker fees. Direct legal funding means you can receive more money more quickly.</p>
+        </div>
+       </div>
+       <div class="container mx-auto lg:flex lg:justify-around">
+        <div class="w-full lg:w-1/2 py-10 px-12">
+            <h4 class="text-mainColor font-bold text-xl">What makes our lawsuit cash help better?</h4>
+            <p class="text-lg py-5">Our lawsuit cash help is better for residents of Missouri and Oklahoma. Some companies don’t get licensed by either the State of Oklahoma or the Missouri Division of Finance. We are licensed to offer lawsuit cash help in both Oklahoma and Missouri. Just two of the ways that makes Express Legal Funding the best.</p>
+        </div>
+        <div class="w-full lg:w-1/2 py-10 px-12">
+            <h4 class="text-mainColor font-bold text-xl">What is legal funding near me?</h4>
+            <p class="text-lg py-5">We are a “legal funding near me” local business with real locations in Texas. So you can get a pre-settlement cash advance on your case from a Texas legal funding company near you. So unlike some lawsuit companies, we don’t rent a virtual office or mailbox in a big Texas city. We are a Texas LLC.</p>
+        </div>
+       </div>
+   </div>
+ 
+   <!-- Section 4 -->
+   <div class="container-fluid bg-white py-24">
+    <div class="container mx-auto px-16 lg:flex lg:justify-around">
+        <div class="w-full lg:w-1/2">
+            <h2 class="text-mainColor text-2xl font-bold">Three Easy Steps</h2>
+            <ol class="list-decimal text-lg px-14">
+                <li><span class="font-medium">Call or Apply Online:</span> Call or apply online for  funding anytime. Get help in a few short minutes.</li>
+                <li><span class="font-medium">We Review:</span> We speak with your attorney and quickly review your case.</li>
+                <li><span class="font-medium">Get Cash:</span> We can typically deliver funding within 24 hours of approval.</li>
+            </ol>
+        </div>
+        <div class="w-full lg:w-1/2 mt-12 lg:mt-0">
+            <form class="w-full max-w-lg  mx-auto px-5">
+                <div class="flex flex-wrap -mx-3 mb-6 justify-between">
+                  <div class="w-full  px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                      Name <span class="text-red-600">*</span>
+                    </label>
+                    <div class="flex justify-between">
+                        <input class="appearance-none block w-1/2 bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mr-3 leading-tight focus:outline-none focus:border-mainColor" id="grid-first-name" type="text" placeholder="First">
+                        <input class="appearance-none block w-1/2 bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-mainColor" id="grid-last-name" type="text" placeholder="Last">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6 justify-between">
+                    <div class="w-full sm:w-1/2 md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+                        Email Address <span class="text-red-600">*</span>
+                      </label>
+                      <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-mainColor" id="grid-email" type="email" placeholder="">
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/2 px-3">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-phone">
+                        Phone <span class="text-red-600">*</span>
+                      </label>
+                      <input class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:border-mainColor" id="grid-phone" type="tel" placeholder="">
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full  px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                        Case Type <span class="text-red-600">*</span>
+                      </label>
+                      <div class="relative">
+                        <select class="block appearance-none w-full bg-white border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-mainColor" id="grid-state">
+                          <option>- Select -</option>
+                          <option>Personal Injury</option>
+                          <option>Auto Accident</option>
+                          <option>Wrongful Death</option>
+                          <option>Maritime Injuries</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                <button class="uppercase bg-mainColor hover:bg-black duration-300 text-white mt-5 py-3 px-8 rounded-full font-bold">Apply Now For Funding</button>
+              </form>
+        </div>
+    </div>
+   </div>
+
+   <!-- Section 5 -->
+   <div style="background-image: url('../../img/auto-accidents.webp');" class="container-fluid py-32 bg-cover bg-no-repeat bg-center relative">
+    <div class="absolute h-full w-full top-0 left-0" style="background:rgba(0,0,0,0.5)"></div>
+    <div class="container mx-auto relative z-40 text-center">
+        <h2 class="text-white text-6xl font-bold">Cash relief now.</h2>
+        <div class="w-full container mx-auto lg:flex lg:justify-center px-4 mt-3">
+            <button class="bg-mainColor text-white text-xl font-bold rounded-full w-full lg:w-2/12 lg:mr-2 mb-2 py-3 lg:px-16 duration-300 hover:bg-white hover:text-black">Call Now</button>
+            <button class="bg-mainColor text-white text-xl font-bold rounded-full w-full lg:w-2/12 lg:ml-2 mb-2 py-3 lg:px-16 duration-300 hover:bg-white hover:text-black">Apply Online</button>
+        </div>
+    </div>
+   </div>  
+
+    <!-- Footer -->
+    <div class="container-fluid bg-mainColor py-10">
+        <div class="container mx-auto flex">
+            <div class="w-6/12 flex justify-center items-center">
+                <img src="../../img/JGW-logo-white-footer.png" alt="">
+            </div>
+            <div class="w-6/12 flex justify-center items-center">
+                <i class="fa-brands fa-facebook text-3xl px-2 text-white hover:-translate-y-2 transition-all duration-500"></i>
+                <i class="fa-brands fa-square-twitter text-3xl px-2 text-white hover:-translate-y-2 transition-all duration-500"></i>
+                <i class="fa-brands fa-youtube text-3xl px-2 text-white hover:-translate-y-2 transition-all duration-500"></i>
+            </div>
+        </div>
+        <div class="container mx-auto flex flex-wrap justify-between py-10">
+            <div class="lg:w-3/12 sm:w-6/12">
+                <h3 class="text-white text-2xl pb-5">Structured Settlements</h3>
+                <a href="tel:5554280940" class="font-medium text-white underline hover:bg-hoverColor hover:text-mainColor">555-428-0940</a>
+                <p class="py-5 text-white">
+                    All hours are Eastern Time<br>
+                    Mon - Thurs: 8 am - 11 pm<br>
+                    Fri: 8 am - 9 pm<br>
+                    Sat: 9 am - 6 pm<br>
+                </p>
+                <a href="mailto:information@wentworth.com" class="font-medium text-white underline hover:bg-hoverColor hover:text-mainColor">information@wentworth.com</a>
+            </div>
+            <div class="lg:w-3/12 sm:w-6/12">
+                <h3 class="text-white text-2xl pb-5">Debt Relief</h3>
+                <a href="tel:5554280940" class="font-medium text-white underline hover:bg-hoverColor hover:text-mainColor">555-428-0940</a>
+                <p class="py-5 text-white">
+                    All hours are Eastern Time<br>
+                    Mon - Thurs: 8 am - 11 pm<br>
+                    Fri: 8 am - 9 pm<br>
+                    Sat: 9 am - 6 pm<br>
+                </p>
+            </div>
+        </div>
+        <div class="container mx-auto text-center">
+            <p class="text-white">Copyright © 2023 Ligitation Funding | Powered by Abov.am</p>
+        </div>
+    </div>
+
+    
+
+
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+       // Getting hamburguer menu in small screens
+const menu = document.getElementById("menu");
+const ulMenu = document.getElementById("ulMenu");
+function menuToggle() {
+  menu.classList.toggle("h-48");
+}
+// Browser resize listener
+window.addEventListener("resize", menuResize);
+// Resize menu if user changing the width with responsive menu opened
+function menuResize() {
+  // First get the size from the window
+  const window_size = window.innerWidth || document.body.clientWidth;
+  if (window_size > 640) {
+    menu.classList.remove("h-48");
+  }
+}
+$(document).scroll(function () {
+    let x = window.scrollY;
+    if(x >= 10){
+        $('#header__section').css({
+            backgroundColor:"#fff",
+            borderBottom:"2px solid #1B976A"
+        })
+    } else{
+        $('#header__section').css({
+            backgroundColor:"#fff",
+            borderBottom:"none"
+        })
+    }
+});
+    </script>
+</body>
+</html>
