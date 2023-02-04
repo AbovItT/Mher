@@ -291,7 +291,7 @@
 const menu = document.getElementById("menu");
 const ulMenu = document.getElementById("ulMenu");
 function menuToggle() {
-  menu.classList.toggle("h-48");
+  menu.classList.toggle("h-60");
 }
 // Browser resize listener
 window.addEventListener("resize", menuResize);
@@ -300,7 +300,7 @@ function menuResize() {
   // First get the size from the window
   const window_size = window.innerWidth || document.body.clientWidth;
   if (window_size > 640) {
-    menu.classList.remove("h-48");
+    menu.classList.remove("h-60");
   }
 }
 $(document).scroll(function () {
