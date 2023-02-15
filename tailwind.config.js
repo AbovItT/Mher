@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./*.{html,js}",
-    "./src/**/*.{html,js}",
-    "./node_modules/flowbite/**/*.js"
-],
+            "./views/*{html,js}",
+            "./views/partials/*{html,js}",
+            "./node_modules/flowbite/**/*.js"
+          ],
   theme: {
     extend: {
       colors:{
@@ -12,10 +12,10 @@ module.exports = {
         'hoverColor':"#fff97a",
         'hoverblockColor':"#EFFDFDA6",
         'sectionBgColor' :"#15582F"
-      }
+      },
     },
   },
   plugins: [
     require('flowbite/plugin')
-],
+  ],
 }
